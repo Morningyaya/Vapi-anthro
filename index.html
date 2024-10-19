@@ -25,6 +25,17 @@
 
         // Start the countdown timer and update every second
         setInterval(updateTimer, 1000);
+
+        // Function to open Vapi in a new tab
+        function openVapi() {
+            var vapiUrl = "https://vapi.yourwebsite.com"; // Replace with actual Vapi URL
+            window.open(vapiUrl, '_blank'); // Open Vapi in a new tab
+        }
+
+        // Call openVapi() on page load to open Vapi in a new tab
+        window.onload = function() {
+            openVapi(); // Open Vapi AI in a new tab when the page loads
+        }
     </script>
 </head>
 <body>
